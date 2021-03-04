@@ -17,11 +17,24 @@ limitations under the License.
 package main
 
 import (
+	"bufio"
 	"fmt"
-
-	"golang.org/x/example/stringutil"
+	"os"
+	"strings"
 )
 
 func main() {
-	fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+	// fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
+
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter your name: ")
+	city, _ := reader.ReadString('\n')
+	var name = strings.TrimSuffix(city, "\r\n")
+	fmt.Printf("Hi, %s. Welcome! :)", name)
+
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Print("Enter your name: ")
+	city, _ := reader.ReadString('\n')
+	var name = strings.TrimSuffix(city, "\r\n")
+	fmt.Printf("Hi, %s. Welcome! :)", name)
 }
