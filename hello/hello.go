@@ -24,7 +24,7 @@ import (
 )
 
 func main() {
-	var name := "AB12cdEF34gh"
+	name := "AB12cdEF34gh"
 	fmt.Printf("Your password is %s. Have fun! :)", name)
 }
 
