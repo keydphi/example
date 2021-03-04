@@ -32,9 +32,4 @@ func main() {
 	var name = strings.TrimSuffix(city, "\r\n")
 	fmt.Printf("Hi, %s. Welcome! :)", name)
 
-	reader := bufio.NewReader(os.Stdin)
-	fmt.Print("Enter your name: ")
-	city, _ := reader.ReadString('\n')
-	var name = strings.TrimSuffix(city, "\r\n")
-	fmt.Printf("Hi, %s. Welcome! :)", name)
 }
