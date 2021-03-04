@@ -24,6 +24,11 @@ import (
 )
 
 func main() {
+	var name := "AB12cdEF34gh"
+	fmt.Printf("Your password is %s. Have fun! :)", name)
+}
+
+func input() {
 	// fmt.Println(stringutil.Reverse("!selpmaxe oG ,olleH"))
 
 	reader := bufio.NewReader(os.Stdin)
