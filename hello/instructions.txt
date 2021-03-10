@@ -1,0 +1,7 @@
+- in folder of hello.go
+git add hello.go
+git commit -m "[commit message]"
+git push
+
+- in docker, in folder of checkout
+git pull http://github.com/keydphi/example
