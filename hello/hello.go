@@ -18,14 +18,17 @@ package main
 
 import (
 	"bufio"
+	"crypto/rand"
 	"fmt"
 	"os"
 	"strings"
 )
 
 func main() {
-	name := "AB12cdEF34gh"
-	fmt.Printf("Your password is %s. Have fun! :)", name)
+	pw := "AB12cdEF34gh"
+	// fmt.Printf("Your password is %s. Have fun! :)\n", pw)
+	firstChar := rand.Int()
+	fmt.Printf("Your password's first character is an upper-case letter: %c (from %d%). Have fun! :)\n", firstChar, firstChar)
 }
 
 func input() {
